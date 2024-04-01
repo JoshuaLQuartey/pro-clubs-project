@@ -15,4 +15,3 @@ data = requests.get(player_url[0])
 soup = BeautifulSoup(data.text, 'html.parser')
 current_table = soup.select('div.flex-nowrap')[1] 
 table_soup = BeautifulSoup(str(current_table), 'html.parser')
-print(table_soup)
